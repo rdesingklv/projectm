@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.container{
+    background-color:skyblue;
+     background-image: url(image.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5px 5px;
+    padding: 5px;
+}
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 0.5em;
+}	
+p {
+float:center;
+width:1000px;
+textalign:right;
+}
+input[type=text], input[type=password] ,input[type=Number]{
+    width: 30%;
+    padding: 5px 5px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: 1 px;
+}
+select{
+    width: 20%;
+    padding: 5px 5px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: 1 px;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    background-color:blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+button:hover {
+    opacity:1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color:blue;
+}
+
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 10%;
+position:center;
+
+}
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 50%; 
+}
+
+@media screen and (max-width: 200px) {
+    .cancelbtn, .signupbtn {
+       width: 60%;
+    }
+}
+h1 {
+    background-color:light magenta;
+    color: orange;
+}
+</style>
+</head>
+<body bgcolor="skyblue">
+											
+
+ <center><img src="Admin.jpg"></center>
+  <div class="container">
+   <center><h1 ><font color="red">Sign Up Form</font></h1></center>
+   <center> <p>Please fill in this required field to create an account.</p></center>
+
+  <center><p><b> FirstName:<input type="text" placeholder="First" id="emId" required ></b></p></center> 
+<br>
+
+    
+   
+   <center><p><b>LastName:<input type="text" placeholder="Last" id="empName" required></b></p></center>
+<br>
+
+
+    
+ <center><p><b> Email  Id:<input type="text" placeholder="Valid Email" id="email" required></b></p></center><br>
+
+    
+ <center><p><b> Password:<input type="password" placeholder="Valid Password" id="psw" required></b></p></center><br>
+
+   
+   <center><p><b> Password:<input type="password" placeholder="Re-enter password" id="psw-repeat" required></b></p></center><br>
+    
+   <div class="clearfix">
+    <center> <button type="button" class="cancelbtn">Cancel</button>
+     <button type="button" class="signupbtn">Sign Up</button </center>
+   </div>    
+
+  </div>
+
+
+</body>
+</html>
